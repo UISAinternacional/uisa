@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad Internacional del Saber y Asociados</title>
+    <style>
+        /* Estilos para el cuerpo y las secciones */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            padding-top: 120px; /* Espacio para que el contenido no quede cubierto por el encabezado fijo */
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed; /* Fija el encabezado en la parte superior */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10; /* Asegura que el encabezado se quede encima de otros elementos */
+        }
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: normal;
+            margin: 0;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        header img {
+            max-height: 50px;  /* Ajusta el tamaño del logo */
+            margin-right: 10px; /* Espacio entre la imagen y el título */
+            opacity: 0;
+            animation: fadeIn 1s forwards; /* Animación para el logo */
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        nav {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            transition: background-color 0.3s ease-in-out;
+            position: fixed; /* Fija la barra de navegación en la parte superior */
+            top: 80px; /* Coloca la barra de navegación justo debajo del encabezado */
+            left: 0;
+            width: 100%;
+            z-index: 9; /* Se asegura que la barra de navegación esté por debajo del encabezado */
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6600; /* Color dinámico en el hover */
+            transform: scale(1.1); /* Efecto de aumento */
+            letter-spacing: 1px; /* Separación de letras al pasar el mouse */
+        }
+        nav a:focus {
+            outline: none; /* Elimina el borde por defecto cuando el enlace tiene el foco */
+        }
+        section {
+            padding: 50px 20px;
+            text-align: justify;  /* Justifica el texto */
+            background-color: rgba(0, 0, 0, 0.2);  /* Fondo negro con 20% de transparencia */
+            border-bottom: 2px solid #ddd; /* Línea sutil para separar las secciones */
+            opacity: 0;
+            transform: translateX(-100%);  /* Comienza desplazado desde la izquierda */
+            transition: opacity 1s ease, transform 1s ease;  /* Transición de opacidad y desplazamiento */
+            margin-top: 0; /* Elimina el margen entre las secciones */
+            font-family: 'Georgia', serif;  /* Tipo de letra profesional y formal */
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateX(0);  /* Deslizar a su posición original */
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+                margin: 0 10px;
+            }
+            section {
+                padding: 30px 15px;
+            }
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header img {
+                max-height: 40px;
+            }
+            header h1 {
+                font-size: 1.2rem;
+            }
+            nav a {
+                font-size: 0.8rem;
+                margin: 0 5px;
+            }
+            section {
+                padding: 20px 10px;
+            }
+            footer {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="file:///C:/Users/Franco/Pictures/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(6).jpg" alt="Logo" id="logo">
+        <h1>Unidad Internacional del Saber y Asociados</h1>
+    </header>
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#enrolled">Matriculados</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="about">
+
+
+
+
+        <h2>Sobre Nosotros</h2>
+
+
+        <h2>Nosotros</h2>
+
+
+
+
+
+
+        <p>Unidad Internacional del Saber y Asociados es una organización de prestigio, comprometida con la promoción del conocimiento integral y el desarrollo de soluciones eficaces a nivel internacional. Nuestra misión es brindar apoyo y respaldo a instituciones y personas a través de servicios especializados, siempre con un enfoque en la transparencia, la ética profesional y el cumplimiento de altos estándares de calidad. Nos dedicamos, en particular, a ofrecer aval de confianza a instituciones tercerizadas, garantizando que sus operaciones y servicios cumplan con los requisitos legales y las normativas aplicables en cada jurisdicción. Este respaldo se extiende a aquellos casos donde surjan inconvenientes relacionados con el derecho al consumidor, tales como situaciones de estafa, fraude o cualquier otra irregularidad vinculada con las instituciones a las que avalamos. En estos casos, Unidad Internacional del Saber y Asociados asume la responsabilidad de intervenir en favor de los afectados, proporcionando las garantías necesarias para la resolución de conflictos y la restitución de los derechos de los consumidores.<p>
+
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Materialize Effect 3</title>
+                <style>
+                    /* Estilos para el contenedor de la imagen */
+                    .image-container {
+                        display: flex;
+                        justify-content: center; /* Centra horizontalmente */
+                        width: 100%;
+                        margin-top: 20px; /* Espaciado superior para mejor presentación */
+                    }
+            
+                    /* Estilos para la animación de materialización */
+                    .materialize-img-3 {
+                        opacity: 0;
+                        transform: translateX(-100%);
+                        transition: opacity 3s ease, transform 3s ease; /* Modifica el tiempo de la animación aquí */
+                        width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+                        max-width: 900px; /* Asegura que la imagen no exceda el tamaño máximo */
+                        height: auto; /* Mantiene las proporciones de la imagen */
+                        display: block;
+                        margin: 0 auto;
+                        border: 5px solid black;
+                        border-radius: 15px;
+                    }
+            
+                    /* Estilos para cuando la imagen es visible */
+                    .materialize-img-3.materialize-visible {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                </style>
+            </head>
+            <body>
+            
+                <!-- Contenedor que centra la imagen -->
+                <div class="image-container">
+                    <img class="materialize-img-3" src="https://i.ibb.co/strCyn0/1.jpg" alt="Descripción de la imagen">
+                </div>
+            
+                <script>
+                    // JavaScript para agregar la clase 'materialize-visible' cuando la imagen esté cerca de la barra de direcciones
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const img = document.querySelector(".materialize-img-3");
+            
+                        function checkVisibility() {
+                            const rect = img.getBoundingClientRect();
+                            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                            // Verificar si la parte superior de la imagen está en la pantalla o cerca de ella
+                            if (rect.top >= -100 && rect.top <= windowHeight) {
+                                img.classList.add("materialize-visible");
+                                // Eliminar el evento de desplazamiento después de que la animación se haya activado una vez
+                                window.removeEventListener("scroll", checkVisibility);
+                            }
+                        }
+            
+                        // Verificar la visibilidad de la imagen en el evento de desplazamiento
+                        window.addEventListener("scroll", checkVisibility);
+                        // Verificar la visibilidad de la imagen al cargar la página
+                        checkVisibility();
+                    });
+                </script>
+            
+            </body>
+            </html>
+            
+
+
+        </p> Nuestra intervención está diseñada para asegurar la sanación de las afectaciones sufridas, actuando con la mayor transparencia y eficacia. Nos enorgullece ser un referente de confianza en el ámbito internacional, ofreciendo a nuestros clientes un servicio que no solo garantiza el cumplimiento normativo, sino que también asegura la protección de sus intereses en todo momento. La seriedad con la que abordamos cada situación y nuestro compromiso con la integridad son los pilares que nos impulsan a seguir creciendo y proporcionando soluciones confiables en todo el mundo. En Unidad Internacional del Saber y Asociados, trabajamos incansablemente para que nuestras acciones reflejen nuestra misión de promover el conocimiento y la confianza en todos los sectores con los que interactuamos, siempre bajo principios de justicia y responsabilidad social.</p>
+   
+   
+   
+   
+        
+        
+        
+        
+        
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="services">
+        <h2>Servicios</h2>
+        <p>Nuestros Servicios
+        
+    
+
+            En Unidad Internacional del Saber y Asociados, ofrecemos una gama integral de servicios diseñados para satisfacer las necesidades de nuestros clientes, con un enfoque especial en la avalización de instituciones tercerizadas y la gestión de matriculados en disciplinas alternativas. Nos especializamos en proporcionar el respaldo necesario para garantizar la seguridad y la confianza de los consumidores al interactuar con terceros, ya sea en el ámbito académico, profesional o empresarial.
+            
+            En caso de que surjan irregularidades, violaciones de derechos o situaciones que afecten la integridad de los consumidores, nuestra organización asume una postura activa y comprometida, respondiendo directamente por los afectados y asegurando la resolución adecuada de las problemáticas. Esto incluye la intervención ante estafas, fraudes y cualquier otra circunstancia que atente contra los derechos de los usuarios.
+          
+
+            Además de la avalización, brindamos soporte burocrático y asesoría legal en situaciones complejas, donde el marco normativo y los procesos administrativos requieren de una intervención especializada. Ofrecemos asistencia en la tramitación de documentación, la resolución de conflictos legales y la defensa de los derechos de los consumidores en diferentes ámbitos.
+            
+            Nuestra experiencia también se extiende a la gestión de sitios web relacionados con nuestros servicios, proporcionando soluciones digitales eficientes que optimicen la interacción entre los consumidores y las instituciones con las que trabajamos. Aseguramos que nuestros clientes cuenten con plataformas seguras, actualizadas y que respeten todas las normativas legales pertinentes.
+            
+            En Unidad Internacional del Saber y Asociados, nuestra operación se cimienta en valores fundamentales como la transparencia, la ética y la eficacia. Estos principios guían todas nuestras acciones, asegurando que nuestras soluciones sean siempre confiables, oportunas y adecuadas a las necesidades de quienes nos confían su protección. Nos comprometemos a ofrecer un servicio que no solo cumpla con los estándares más altos de calidad, sino que también promueva un entorno de seguridad, justicia y bienestar para todos nuestros clientes y aliados.</p>
+
+
+
+
+
+
+
+
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Materialize Effect 4</title>
+                <style>
+                    /* Estilos para centrar solo la imagen */
+                    .image-container {
+                        display: flex;
+                        justify-content: center; /* Centra horizontalmente */
+                        align-items: center; /* Centra verticalmente */
+                        width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+                        height: 100vh; /* Asegura que el contenedor ocupe la altura completa de la ventana */
+                        box-sizing: border-box;
+                        padding: 10px; /* Agrega un poco de espacio alrededor en pantallas pequeñas */
+                    }
+            
+                    /* Estilos para la animación de materialización */
+                    .materialize-img-4 {
+                        opacity: 0;
+                        transform: translateX(-100%);
+                        transition: opacity 3s ease, transform 3s ease; /* Modifica el tiempo de la animación aquí */
+                        max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+                        height: auto; /* Mantiene las proporciones de la imagen */
+                        border: 5px solid black;
+                        border-radius: 15px;
+                    }
+            
+                    /* Estilos para cuando la imagen es visible */
+                    .materialize-img-4.materialize-visible {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+            
+                    /* Ajustes adicionales para pantallas más pequeñas */
+                    @media (max-width: 768px) {
+                        .image-container {
+                            height: auto; /* Permite que la altura se ajuste en pantallas pequeñas */
+                            padding: 5px; /* Espacio más pequeño en pantallas pequeñas */
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+            
+                <!-- Contenedor que centra la imagen -->
+                <div class="image-container">
+                    <img class="materialize-img-4" src="https://i.ibb.co/XySjGZF/4.jpg" alt="Descripción de la imagen">
+                </div>
+            
+                <script>
+                    // JavaScript para agregar la clase 'materialize-visible' cuando la imagen esté cerca de la barra de direcciones
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const img = document.querySelector(".materialize-img-4");
+            
+                        function checkVisibility() {
+                            const rect = img.getBoundingClientRect();
+                            const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                            // Verificar si la parte superior de la imagen está en la pantalla o cerca de ella
+                            if (rect.top >= -100 && rect.top <= windowHeight) {
+                                img.classList.add("materialize-visible");
+                                // Eliminar el evento de desplazamiento después de que la animación se haya activado una vez
+                                window.removeEventListener("scroll", checkVisibility);
+                            }
+                        }
+            
+                        // Verificar la visibilidad de la imagen en el evento de desplazamiento
+                        window.addEventListener("scroll", checkVisibility);
+                        // Verificar la visibilidad de la imagen al cargar la página
+                        checkVisibility();
+                    });
+                </script>
+            
+            </body>
+            </html>
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Materialize Effect 2</title>
+                <style>
+                    /* Estilos para la animación de materialización */
+                    .materialize-img {
+                        opacity: 0;
+                        transition: opacity 3s ease; /* Modifica el tiempo de la animación aquí */
+                        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+                        height: auto; /* Mantiene las proporciones de la imagen */
+                        display: block;
+                        margin: 0 auto;
+                        border: 5px solid black;
+                        border-radius: 15px;
+                    }
+            
+                    /* Estilos para la animación de materialización visible */
+                    .materialize-img.materialize-visible {
+                        opacity: 1;
+                    }
+                    
+                    /* Asegura espacio alrededor de la imagen en pantallas pequeñas */
+                    body {
+                        margin: 0;
+                        padding: 10px;
+                        box-sizing: border-box;
+                    }
+                </style>
+            </head>
+            <body>
+            
+            <!-- La imagen con la clase 'materialize-img' -->
+            <img class="materialize-img" src="https://i.ibb.co/vYnqMNj/3.jpg" alt="Descripción de la imagen">
+            
+            <script>
+                // JavaScript para agregar la clase 'materialize-visible' cuando la imagen esté cerca de la barra de direcciones
+                document.addEventListener("DOMContentLoaded", function() {
+                    const img = document.querySelector(".materialize-img");
+            
+                    function checkVisibility() {
+                        const rect = img.getBoundingClientRect();
+                        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                        // Verificar si la parte superior de la imagen está en la pantalla o cerca de ella
+                        if (rect.top >= -100 && rect.top <= windowHeight) {
+                            img.classList.add("materialize-visible");
+                            // Eliminar el evento de desplazamiento después de que la animación se haya activado una vez
+                            window.removeEventListener("scroll", checkVisibility);
+                        }
+                    }
+            
+                    // Verificar la visibilidad de la imagen en el evento de desplazamiento
+                    window.addEventListener("scroll", checkVisibility);
+                    // Verificar la visibilidad de la imagen al cargar la página
+                    checkVisibility();
+                });
+            </script>
+            
+            </body>
+            </html>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <section id="enrolled">
+        <h2>Matriculados</h2>
+        <p>La Importancia de los Contratos de Matriculación y el Soporte Profesional en el Desarrollo Académico En el ámbito académico y profesional, los contratos de matriculación son instrumentos fundamentales para garantizar la claridad, la seguridad y el cumplimiento de derechos y deberes tanto para los estudiantes como para las instituciones educativas. Estos contratos formalizan el vínculo entre ambas partes, estableciendo las condiciones necesarias para llevar a cabo un proceso educativo transparente y eficaz. En Unidad Internacional del Saber y Asociados, entendemos la importancia de este proceso, y por ello, ofrecemos un servicio integral de creación, revisión y gestión de contratos de matriculación. Nuestro enfoque se basa en la seriedad y el profesionalismo, asegurándonos de que cada documento cumpla con los más altos estándares legales y administrativos, brindando tranquilidad y respaldo a ambas partes involucradas. El Valor de un Contrato de Matriculación Un contrato de matriculación no es solo un trámite formal; es un compromiso mutuo que garantiza: Claridad en las condiciones: Define de manera precisa los términos de inscripción, pagos, derechos y obligaciones del estudiante y de la institución. Seguridad legal: Resguarda los derechos de los matriculados frente a cualquier eventualidad, estableciendo un marco normativo que protege a los involucrados. Prevención de conflictos: Minimiza el riesgo de malentendidos o disputas, proporcionando un documento que regula las relaciones educativas. Soporte Profesional y Seriedad en el Proceso En Unidad Internacional del Saber y Asociados, ofrecemos un soporte completo durante todas las etapas de la matriculación: Elaboración personalizada: Redactamos contratos que se ajusten a las necesidades específicas de cada institución y programa de formación. Revisión y asesoramiento: Analizamos contratos existentes para garantizar que cumplan con las normativas legales y administrativas vigentes. Gestión y seguimiento: Acompañamos a las instituciones y estudiantes en el cumplimiento de los términos establecidos, ofreciendo un respaldo constante ante cualquier eventualidad. Profesionalizar tus Conocimientos: Una Necesidad en el Mundo Actual La matriculación no solo abre las puertas a nuevas oportunidades educativas; también es un paso esencial para la profesionalización de tus conocimientos. En un mundo competitivo y en constante evolución, contar con una formación académica formal es fundamental para destacar y alcanzar tus metas personales y laborales. La profesionalización no se trata solo de adquirir conocimientos técnicos, sino de desarrollar habilidades, competencias y una visión integral que te permita enfrentar los retos del entorno actual. Un proceso de matriculación bien gestionado asegura que puedas centrarte en tu desarrollo, sabiendo que cuentas con un respaldo sólido en todo momento. Compromiso con la Excelencia Académica En Unidad Internacional del Saber y Asociados, nos enorgullece contribuir al fortalecimiento del sistema educativo mediante un servicio comprometido con la transparencia, la ética y la eficacia. Al confiar en nuestros servicios, estarás garantizando no solo un proceso de matriculación seguro y profesional, sino también un paso sólido hacia un futuro académico y profesional exitoso. Porque profesionalizar tus conocimientos es más que una opción, es una inversión en tu crecimiento y en tu porvenir. Con Unidad Internacional del Saber y Asociados, estás en las mejores manos para iniciar este camino con confianza y respaldo total brindado por nuestra Entidad.</p>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Email: contacto@unidadsaber.com</p>
+    
+        <p> Unidad Internacional del Saber y Asociados</p>
+        <p>2025</p>
+        <p>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Unidad Internacional del Saber y Asociados. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para verificar si una sección está cerca de la vista
+        function checkVisibility() {
+            const sections = document.querySelectorAll('section');
+            const windowHeight = window.innerHeight;
+            const scrollY = window.scrollY;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+
+                if (scrollY + windowHeight >= sectionTop + 100 && scrollY <= sectionTop + sectionHeight) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        // Escuchar el evento de scroll
+        window.addEventListener('scroll', checkVisibility);
+
+        // Verificar la visibilidad al cargar la página por si ya está cerca de la vista
+        document.addEventListener('DOMContentLoaded', checkVisibility);
+    </script>
+</body>
+</html>
