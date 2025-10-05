@@ -162,6 +162,7 @@
         <a href="#services">Servicios</a>
         <a href="#enrolled">Matriculados Membresías</a>
         <a href="#denunciar">Denunciar</a>
+        <a href="#Crónicas">Crónicas</a>
         <a href="#contact">Contacto</a><a>
         
         
@@ -799,6 +800,195 @@
 
 
 
+
+
+
+<!-- == GALERÍA (PEGA ESTE BLOQUE EN TU HTML) == -->
+<section id="Crónicas" class="uisa-contenedor-noticias">
+
+
+
+     
+  <div class="uisa-galeria-noticias">
+    <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A-2/" target="_blank" class="uisa-noticia-item">
+      <img src="https://i.ibb.co/gb3wwyQC/Dise-o-sin-t-tulo-1.png/300x300" alt="Noticia 1">
+      <span>🌱 La ciencia y la espiritualidad confirman: las plantas responden a nuestras palabras(...)”</span>
+    </a>
+
+    <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A-1/" target="_blank" class="uisa-noticia-item">
+      <img src="https://i.ibb.co/hJdhLXCd/uisa-111.jpg/300x300" alt="Noticia 2">
+      <span>🛑 Alerta espiritual: el peligro oculto detrás de algunas escuelas de (...)</span>
+    </a>
+
+    <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A/" target="_blank" class="uisa-noticia-item">
+      <img src="https://i.ibb.co/wr3BPXs3/Copia-de-ASOCIACI-N-DE-FORMACI-N-HOL-STICA-ANDINA-1.jpg/300x300" alt="Noticia 3">
+      <span>La Medicina Alternativa Bajo Lupa Científica Internacional(...)</span>
+    </a>
+
+    <a href="https://uisainternacional.github.io/PRENSA-U.I.S.A-3/" target="_blank" class="uisa-noticia-item">
+      <img src="https://i.ibb.co/7dVGznSj/ODIO-2.jpg/300x300" alt="Noticia 4">
+      <span>💧científico japonés afirma las emociones pueden cambiar la materia(...)</span>
+    </a>
+  </div>
+</section>
+
+<!-- <!-- == ESTILOS (encapsulados, muy específicos y responsive) == -->
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0 !important;
+    font-family: Arial, sans-serif;
+  }
+
+  #Noticias,
+  #Noticias.uisa-contenedor-noticias,
+  #Noticias .uisa-galeria-noticias {
+    background-color: #b8b4b4 !important;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .uisa-contenedor-noticias {
+    padding: 40px 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .uisa-galeria-noticias {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(160px, 220px));
+    gap: 22px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .uisa-noticia-item {
+    position: relative;
+    display: block;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid rgba(0,0,0,0.35);
+    background: #666666;
+    text-decoration: none;
+    transition: transform .28s ease, box-shadow .28s ease;
+  }
+
+  .uisa-noticia-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .28s ease;
+  }
+
+  .uisa-noticia-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.22);
+  }
+
+  .uisa-noticia-item:hover img {
+    transform: scale(1.08);
+  }
+
+  .uisa-noticia-item span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    /* 👇 Contorno más visible */
+    text-shadow: 
+      -1px -1px 2px #000,
+       1px -1px 2px #000,
+      -1px  1px 2px #000,
+       1px  1px 2px #000;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 600px) {
+    .uisa-galeria-noticias {
+      grid-template-columns: 1fr;
+    }
+
+    .uisa-noticia-item {
+      width: 90%;
+      height: 260px;
+      margin: 0 auto;
+    }
+  }
+</style>
+
+<!-- == SCRIPT: ajusta ancestros que estén en blanco == -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const target = document.getElementById('Noticias');
+    if (!target) return;
+    target.style.backgroundColor = '#f0f0f0';
+
+    let el = target.parentElement;
+    while (el && el.tagName.toLowerCase() !== 'html') {
+      try {
+        const cs = window.getComputedStyle(el);
+        const bg = cs.backgroundColor || '';
+        if (bg === 'rgb(255, 255, 255)' || bg === 'rgba(255, 255, 255, 1)') {
+          el.style.backgroundColor = '#f0f0f0';
+        }
+      } catch (e) {}
+      el = el.parentElement;
+    }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
 <section id="contact">
     <h2>Contacto</h2>
     <p>Email: INTERNACIONAL.UISA@outlook.com</p>
@@ -836,6 +1026,17 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
